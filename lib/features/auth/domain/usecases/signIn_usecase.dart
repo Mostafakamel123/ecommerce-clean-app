@@ -1,0 +1,14 @@
+// features/auth/domain/usecases/login_with_email.dart
+import 'package:dartz/dartz.dart';
+import 'package:ecommcere_clean_app/features/auth/domain/entities/user_entity.dart';
+import 'package:ecommcere_clean_app/features/auth/domain/repository/auth_repo.dart';
+
+class LoginWithEmail {
+  final AuthRepository repository;
+
+  LoginWithEmail(this.repository);
+
+  Future<Either<Exception, UserEntity>> call(String email, String password) {
+    return repository.loginWithEmail(email, password);
+  }
+}

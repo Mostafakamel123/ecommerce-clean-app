@@ -1,5 +1,6 @@
 class EndPoint {
-  static String baseUrl = "";
-  static String signIn = "";
+  static String baseUrl = "https://fakestoreapi.com/";
+  static String signIn = "auth/login";
   static String signUp = "";
+  static String products = "products";
 }
