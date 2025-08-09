@@ -10,4 +10,6 @@ class GetAllproductsUsecase {
   GetAllproductsUsecase({required this.repo});
 
   Future<Either<Failure, List<Product>>> call() async {
-    return repo.getA
+    return repo.getAllProducts();
+  }
+}
